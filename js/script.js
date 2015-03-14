@@ -14,3 +14,15 @@ function highlightThis(event) {
     alert(this.className);
     this.style.backgroundColor=backgroundColor;
 }
+
+$(document).foundation();
+
+$(document).ready(function(){
+    $('.image-carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
+    });
+})

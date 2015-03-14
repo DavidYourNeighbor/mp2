@@ -1,0 +1,53 @@
+<div clas="row">
+    <div class="small-1 medium-1 large-1 all">
+        All
+    </div>
+    <div class="small-1 medium-1 large-1 action">
+        Aciton
+    </div>
+    <div class="small-1 medium-1 large-1 adventure">
+        Adventure
+    </div>
+    <div class="small-1 medium-1 large-1 Crime">
+        Crime
+    </div>
+    <div class="small-1 medium-1 large-1 comedy">
+        Comedy
+    </div>
+    <div class="small-1 medium-1 large-1 drama">
+        Drama
+    </div>
+    <div class="small-1 medium-1 large-1 musical">
+        Musical
+    </div>
+    <div class="small-1 medium-1 large-1 mystery">
+        Mystery
+    </div>
+    <div class="small-1 medium-1 large-1 Romance">
+        Romance
+    </div>
+    <div class="small-1 medium-1 large-1 sci-fi">
+        Sci-Fi
+    </div>
+    <div class="small-1 medium-1 large-1 thriller">
+        Thriller
+    </div>
+    <div class="small-1 medium-1 large-1 western">
+        Wester
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-10">
+        <ul class="movies small-block-grid-2 medium-block-grid-6 large-block-grid-8">
+            <li ng-repeat="movie in movies">
+                <a href="#/movies/{{movie.imdbID}}" class="thumbnail">
+                    <img ng-src="/data/images/{{movie.imdbID}}.jpg">
+                </a>
+                <a href="#/movies/{{movie.imdbID}}"><h1>{{movie.title}}</h1></a>
+                <p>{{movie.released}}</p>
+                <p>{{movie.rank}}</p>
+            </li>
+        </ul>
+    </div>
+</div>

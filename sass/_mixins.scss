@@ -1,0 +1,11 @@
+@-webkit-keyframes colorloop {
+  0% {background: $footer-background-color; color: $background-grey;}
+  50% {background: $background-grey; color: $footer-background-color;}
+  100% {background: $footer-background-color; color: $background-grey;}
+}
+
+@keyframes colorloop{
+  0% {background: $footer-background-color; color: $background-grey;}
+  50% {background: $background-grey; color: $footer-background-color;}
+  100% {background: $footer-background-color; color: $background-grey;}
+}

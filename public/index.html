@@ -1,60 +1,182 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>MP2 Starter</title>
-  <script src="./lib/angular/angular.min.js"></script>
-  <script src="./js/controllers.js"></script>
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./foundation/css/foundation.css">
-  
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Illini Student Musicals</title>
+    <link rel="stylesheet" href="./foundation/css/foundation.css">
+    <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="slick-1.4.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick-1.4.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
-
 
 <body>
 
-	<nav class="top-bar" data-topbar role="navigation">
-	  <ul class="title-area">
-	    <li class="name">
-	      <h1><a href="#">MP2</a></h1>
-	    </li>
-	     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-	    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-	  </ul>
+<div class="contain-to-grid sticky">
+    <nav class="top-bar important-class" data-topbar>
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="#">Illini Student Musicals</a></h1>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+        </ul>
+        <section class="top-bar-section">
+            <ul class="right">
+                <li data-magellan-arrival="introduction"><a href="#introduction"> Introduction </a></li>
+                <li data-magellan-arrival="currentproduction"><a href="#currentproduction"> Current Production </a></li>
+                <li data-magellan-arrival="lendahand"><a href="#lendahand"> Lend a Hand </a></li>
+                <li data-magellan-arrival="pastproductions"><a href="#pastproductions"> Past Productions </a></li>
+                <li data-magellan-arrival="gettoknowus"><a href="#gettoknowus"> Get To Know Us </a></li>
+            </ul>
+        </section>
+    </nav>
+</div>
 
-	  <section class="top-bar-section">
-	    <!-- Left Nav Section -->
-	    <ul class="left">
-	      <li><a href="https://courses.engr.illinois.edu/cs498rk1/index.html">CS498RK</a></li>
-	    </ul>
-	  </section>
-	</nav>
+<div class="pageheader" id="illinistudentmusicals" data-magellan-arrival="illinistudentmusicals">
+    <h1>Illini Student Musicals</h1>
+    <h2>An RSO at UIUC Performing Musical Theater</h2>
+</div>
 
-	<div class="row" ng-app = "demoApp">
-		<div class="panel small-centered columns small-12 medium-4">
-    	<input id="nameInput" ng-model="name" placeholder="Your Name" autofocus>
-	
-		<h3>Hello, {{name}}</h3>
+<div id="modalimages">
+    <div class="small-6 medium-3 large-3 columns">
+        <a href="#" data-reveal-id="Modal1"><img src="images/modal1.jpg"></a>
+    </div>
+    <div class="small-6 medium-3 large-3 columns">
+        <a href="#" data-reveal-id="Modal2"><img src="images/modal2.jpg"></a>
+    </div>
+    <div class="small-6 medium-3 large-3 columns">
+        <a href="#" data-reveal-id="Modal3"><img src="images/modal3.jpg"></a>
+    </div>
+    <div class="small-6 medium-3 large-3 columns">
+        <a href="#" data-reveal-id="Modal4"><img src="images/modal4.jpg"></a>
+    </div>
+</div>
 
-		</div>
-	</div>
-	<div class="row">
-		<div class="alert columns small-12 large-6">
-			<div><img src="http://lorempixel.com/400/200/cats" /></div>
+<div id="Modal1" class="reveal-modal" data-reveal>
+    <img src="images/modal1.jpg">
+    <div id="Exit"><a class="close-reveal-modal">&#215;</a></div>
+</div>
+<div id="Modal2" class="reveal-modal" data-reveal>
+    <img src="images/modal2.jpg">
+    <div id="Exit2"><a class="close-reveal-modal">&#215;</a></div>
+</div>
+<div id="Modal3" class="reveal-modal" data-reveal>
+    <img src="images/modal3.jpg">
+    <div id="Exit3"><a class="close-reveal-modal">&#215;</a></div>
+</div>
+<div id="Modal4" class="reveal-modal" data-reveal>
+    <img src="images/modal4.jpg">
+    <div id="Exit4"><a class="close-reveal-modal">&#215;</a></div>
+</div>
 
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit velit temporibus, fugit recusandae aliquid officiis molestias possimus reprehenderit quos. Facere dolores, nulla optio recusandae. Voluptatibus aut esse nulla saepe sit ut amet, neque officia officiis quam ea ex adipisci, quaerat, eligendi veniam iste temporibus. Aperiam ea quos fugiat provident, voluptatum reiciendis mollitia voluptates, odio quam at, deserunt animi voluptas odit aliquid saepe voluptate distinctio excepturi. Deserunt, id esse fuga cum accusantium eos obcaecati odit veritatis molestias illum sequi repellat, quisquam quasi architecto velit blanditiis perferendis, nulla eligendi non laboriosam. Eligendi sint, voluptatem ipsam dolore eum temporibus dicta, quaerat ea molestias placeat, asperiores minima sit explicabo! Repellat qui ducimus ipsum. Dignissimos at, aliquid vitae asperiores omnis provident voluptatibus, itaque delectus. Porro corrupti vel culpa, delectus in doloremque nam ratione aliquid ullam non iusto magnam, repudiandae, magni a quasi voluptatum inventore exercitationem quibusdam sint autem totam ex quia possimus. Similique ad fugiat eligendi magnam ab, ex nulla unde eos, tempora quis consequatur maxime inventore perferendis voluptatem non nam dignissimos voluptatum dolor quasi quidem molestias maiores doloribus. Omnis ipsa fugit amet! Eum repellat deleniti fuga omnis in maiores rem iusto, qui quasi ipsum illum odit laudantium molestiae, nostrum ipsam fugit animi atque! Non.
-		</div>
-		<div class="columns small-12 large-6">
-	  	<div><img src="http://lorempixel.com/400/200/nature" />	</div>
-	  	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nobis facere sint placeat necessitatibus reprehenderit amet quas minima beatae illo nemo labore, maxime adipisci, accusamus voluptates repudiandae quia, ut excepturi ea quis obcaecati molestias error architecto unde? Hic vel facere porro magnam ipsam omnis eos ducimus, architecto velit beatae modi natus sunt suscipit quo optio qui repellat, blanditiis consequuntur. Fuga omnis porro quis inventore in voluptatum veritatis illum beatae rem. Labore nam saepe cupiditate quod, itaque quidem libero, quas tempore incidunt, quos earum repudiandae recusandae quia voluptas ducimus inventore, expedita. Alias minima, commodi aut, aspernatur laborum quae mollitia pariatur suscipit ad accusamus a ipsam fuga necessitatibus voluptas esse error reprehenderit provident. Sequi architecto ipsum qui enim labore sunt incidunt ullam pariatur. Minus porro error ipsa perferendis exercitationem debitis dicta asperiores nostrum cum voluptas qui dolores odit numquam incidunt cumque eos nemo architecto repudiandae adipisci, eius ut, aut suscipit minima perspiciatis consectetur. Ratione quisquam neque voluptatem? Qui, aspernatur iste quaerat iure. Debitis nobis minus animi mollitia libero temporibus perferendis ratione, inventore ullam, eos ut porro, velit quibusdam rerum possimus, ex! Quidem consectetur obcaecati ad veritatis. Velit illum aliquid tenetur, nisi illo quaerat labore nemo id sequi eveniet consequuntur. Voluptate, similique, rem!</div>
-	</div>
- 
+<div class="small-12 medium-12 large-12 columns" id="introduction" data-magellan-destination="introduction">
+    <article>
+        <h2 class="texttitle"> Introduction </h2>
+        <p>Illini Student Musicals (ISM) is an organization dedicated to the performance of musical theater at the University of Illinois at Urbana-Champaign. Students will be able to gain experience in the administrative, technical, creative, and performance aspects of producing musical theatre. By putting on a show once a semester, students will be able to get first-hand experience in the collaborative process and in all elements of musical theater. </p>
+        <p>ISM strives to put on performances that showcase our members’ talent, enthusiasm, creativity, and passion. With each show, we aim to challenge ourselves as artists as well as our audiences with performances of the highest artistic and professional caliber. </p>
+    </article>
+</div>
 
+<div class="row" id="movingbackground">
+    <div class="movingbackground small-12 medium-12 large-12 small-centered medium-centered large-centered columns">
+        <img src="images/movingbackground.jpg">
+    </div>
+</div>
 
-  <script src="./js/script.js"></script>
-  <script src="./lib/jquery-2.1.3.min/index.js"></script>
-  <script src="./foundation/js/foundation.min.js"></script>
-  <script src="http://localhost:35729/livereload.js"></script>
+<div id="sidebyside">
+    <div class="small-12 medium-6 large-6 columns" id="currentproduction" data-magellan-destination="currentproduction">
+        <article>
+            <h2 class = "texttitle">Current Production</h2>
+            <p>This semester, ISM is proud to present <em>Avenue Q</em>, a puppet-filled comedy that follows a group of 20-somethings seeking their purpose in big-city life.</p>
+            <p>Winner of the Tony Award "Triple Crown" for Best Musical, Best Score, and Best Book, <em>Avenue Q</em> is part flesh, part felt, and packed with heart.</p>
+            <p>The laugh-out-loud musical tells the timeless story of a recent college grad named Princeton who moves into a shabby New York apartment all the way out on Avenue Q. He soon discovers that although the residents seem nice, it's clear that this is not your ordinary neighborhood. Together, Princeton and his new-found friends struggle to find jobs, dates, and their ever-elusive purpose in life.</p>
+            <p>Filled with gut-busting humor and a delightfully catchy score, not to mention puppets, <em>Avenue Q</em> is a truly unique show that has quickly become a favorite for audiences everywhere. Although the show addresses humorous adult issues, it is similar to a beloved children's show; a place where puppets are friends, monsters are good, and life lessons are learned.</p>
+        </article>
+    </div>
+    <div class="small-12 medium-6 large-6 columns" id="lendahand" data-magellan-destination="lendahand">
+        <article>
+            <h2 class= "texttitle"> Lend a Hand </h2>
+            <p>As a 501(c)3 charitable organization, ISM prides itself on enriching its nearby community with both the arts and multiple community outreach events every semester. That said, our organization needs your help. In addition to rent for the theater itself, construction space, and other ongoing expenses, each production involves royalties, costumes, sets, lighting, sound, stipends for instrumentalists, and script costs, to name a few. A large-scale musicals cost tens of thousands of dollars. Fortunately, we are able to keep our ticket prices down with the help of dedicated volunteers, sponsors, and a loyal membership base. This support enables us to maintain a high level of excellence we have offered in our first few seasons, and in order to keep the show going, we could use help from you.</p>
+        </article>
+    </div>
+</div>
+
+<div class="row">
+    <div class="small-10 small-centered medium-10 medium-centered large-10 large-centered columns">
+        <div class="small-12 medium-12 large-12 image-carousel">
+            <div>
+                <img src="images/carousel1.JPG">
+            </div>
+            <div>
+                <img src="images/carousel2.JPG">
+            </div>
+            <div>
+                <img src="images/carousel3.JPG">
+            </div>
+            <div>
+                <img src="images/carousel4.JPG">
+            </div>
+            <div>
+                <img src="images/carousel5.JPG">
+        </div>
+        <div>
+            <img src="images/carousel6.JPG">
+        </div>
+    </div>
+    </div>
+</div>
+
+<div class="small-12 medium-12 large-12 columns" id="pastproductions" data-magellan-destination="pastproductions">
+    <article>
+        <h2 class = "texttitle">Past Productions</h2>
+        <p> Operating since 2012, ISM has had phenomenal success with its past productions, which include:</p>
+        <ul>
+            <li><em>The Drowsy Chaperone</em></li>
+            <li><em>Little Shop of Horrors</em></li>
+            <li><em>The Wedding Singer</em></li>
+            <li><em>The Rocky Horror Show</em></li>
+            <li><em>In Progress - A Broadway Revue</em></li>
+            <li><em>West Side Story</em></li>
+        </ul>
+    </article>
+</div>
+
+<div class="row wholescreen">
+    <div class="row videowrapper">
+        <video class="small-12 medium-12 large-12 columns" id="harlemshake" controls>
+            <source src="video/LittleShopHarlemShake.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+<div class="small-12 medium-12 large-12 columns" id="gettoknowus" data-magellan-destination="gettoknowus">
+    <div class="anchor">
+        <article>
+            <h2 class="texttitle"> Get to Know Us </h2>
+            <p>Stay up to date with the most recent ISM news! Our full website can be found <a href="http://illinimusicals.wix.com/illinimusicals">here</a>.</p>
+            <p>
+                <a href="https://www.facebook.com/IlliniStudentMusicals/timeline"><i class="fa fa-facebook-official fa-3x"></i></a>
+                <a href="https://twitter.com/IlliniMusicals"><i class="fa fa-twitter fa-3x"></i></a>
+                <a href="https://instagram.com/illinimusicals/"><i class="fa fa-instagram fa-3x"></i></a>
+                <a href="http://illinimusicals.tumblr.com/"><i class="fa fa-tumblr fa-3x"></i></a>
+            </p>
+        </article>
+    </div>
+</div>
+
+<div class="row">
+    <div class="small-12 medium-12 large-12 footer">&copy; 2015 &ndash; David Naber</div>
+</div>
+
+<script src="./lib/angular/angular.min.js"></script>
+<script src="./lib/jquery-2.1.3.min/index.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="./foundation/js/foundation.min.js"></script>
+<script type="text/javascript" src="slick-1.4.1/slick/slick.min.js"></script>
+<script src="./js/controllers.js"></script>
+<script src="./js/script.js"></script>
+<script src="http://localhost:35729/livereload.js"></script>
 </body>
 </html>

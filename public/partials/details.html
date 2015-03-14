@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="small-12 block-medium-4 block-large-3">
+        <ul class="movie small-12 medium-4 large-3">
+            <li ng-repeat="movie in movies | filter:specialID">
+                <img ng-src="/data/images/{{movie.imdbID}}.jpg" class="movie">
+            </li>
+        </ul>
+    </div>
+    <div>
+        <ul class="moviedeets small-12 block-medium-8 block-large-9">
+            <li ng-repeat="movie in movies | filter:specialID">
+                <h1>{{movie.title}}</h1>
+                <p>{{movie.plot}}</p>
+                <ul>
+                    <li>Released: {{movie.released}}</li>
+                    <li>Runtime: {{movie.runtime}}</li>
+                    <li>Awards and Nominations: {{movie.awards}}</li>
+                    <li>Rank: {{movie.rank}}</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>

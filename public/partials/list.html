@@ -1,0 +1,28 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2">
+            Search:
+            <br>
+            <input ng-model="query">
+            <br>
+            Sort by:
+            <select ng-model="orderSelection">
+                <option value="title">Title</option>
+                <option value="rank">Rank</option>
+            </select>
+            Ascending: <input type="radio" ng-model="descendingtoggle" ng-value="false">
+            Descending: <input type="radio" ng-model="descendingtoggle" ng-value="true">
+        </div>
+
+        <div class="col-md-10">
+            <ul class="movies small-block-grid-2 medium-block-grid-6 large-block-grid-8">
+                <li ng-repeat="movie in movies | filter:query | orderBy:orderSelection:descendingtoggle">
+                    <a href="#/movies/{{movie.imdbID}}" class="thumbnail"><img ng-src="/data/images/{{movie.imdbID}}.jpg"></a>
+                    <a href="#/movies/{{movie.imdbID}}"><h1>{{movie.title}}</h1></a>
+                    <p>{{movie.released}}</p>
+                    <p>{{movie.rank}}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
